@@ -1,0 +1,54 @@
+[
+    {
+        "cargo":"Engenheiro de Software",
+        "pessoa":[
+            {
+                "nome":"Paulo Henrique",
+                "imagem":"imgs/people_002.jpg",
+                "posicao":"Engenheiro Lider - iFood",
+                "url_linkedin":"http://www.globo.com",
+                "experiencia":"Experiencia - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
+                "formacao":"Formação - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
+                "habilidades":"Habilidades - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis."
+            },
+            {
+                "nome":"Paula Fernandes",
+                "imagem":"imgs/people_001.jpg",
+                "posicao":"Engenheira Seinor - Nubank",
+                "url_linkedin":"http://www.google.com",
+                "experiencia":"Experiencia - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
+                "formacao":"Formação - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
+                "habilidades":"Habilidades - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis."
+            },
+            {
+                "nome":"Marília Medonça",
+                "imagem":"imgs/people_003.jpg",
+                "posicao":"Engenheira Pleno - UOL",
+                "url_linkedin":"http://www.uol.com",
+                "experiencia":"Experiencia - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
+                "formacao":"Formação - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
+                "habilidades":"Habilidades - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis."
+            }                      
+        ]
+    },
+    {
+        "cargo":"Arquiteto de Software",
+        "pessoa":[
+            {
+                "nome":"Marcos Arrais",
+                "imagem":"imgs/people_004.jpg",
+                "posicao":"Engenheiro Lider - iFood",
+                "url_linkedin":"http://www.globo.com",
+                "experiencia":"Experiencia - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
+                "formacao":"Formação - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
+                "habilidades":"Habilidades - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis."
+            }                    
+        ]
+    },
+    {
+        "cargo":"Devops",
+        "pessoa":[
+                 
+        ]
+    }     
+]

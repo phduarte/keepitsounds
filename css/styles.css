@@ -1,0 +1,88 @@
+header{
+    /* background: url('../imgs/bg1.jpg'); */
+    /* background-color: #B200B2; */
+    background-size: cover;
+    height: 100px;
+    -webkit-box-shadow: 0px 4px 12px 3px rgba(0,0,0,0.56); 
+    box-shadow: 0px 4px 12px 3px rgba(0,0,0,0.56);  
+}
+
+body { 
+    /* background-color: #000; */
+    background-color: #171516;
+    /* background-image: url('../imgs/bg2.jpg'); */
+    background-size:auto;
+}
+
+.logo{
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 10px;
+}
+
+main{
+    margin-top: 110px;
+    margin-bottom: 50px;
+}
+
+.title_cat h2{
+    background: url('../imgs/cat_icon.png');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: 32px;
+    padding: 8px;
+    font-size: 1.1rem;
+    color: #07c8da;
+    border-bottom: 2px solid #07c8da;
+    border-bottom: 2px solid #b0029f;
+    padding-left: 45px;
+}
+.card{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.card-header{
+    text-align: center;
+    padding-top: 40px;
+    font-size: 1.5rem;
+    color: #b0029f;
+}
+#fullProfile_Title{
+    color: #b0029f;
+}
+.img_profile{
+    border-radius: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: -65px;
+}
+
+footer{
+    /* background: url('../imgs/bg1.jpg'); */
+    background-image: url('../imgs/bg-footer.png');
+    /* background-color: #000000; */
+    /* background-size: cover; */
+    background-position: 5px;
+    height: 60px;
+    padding: 10px;
+}
+
+
+.box-center
+{
+    /* width: 100%; */
+    /* background-color: #FF0000; */
+}
+
+.btn-group
+{
+    /* position: relative;
+    margin: 0 auto;
+    clear: both; */
+    /* display: block; */
+}

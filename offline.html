@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+
+    <!-- iOS meta tags and icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Connect Peeople">
+    <link rel="apple-touch-icon" href="icons/152.png">
+
+    <meta name="description" content="App para conectar pessoas da TI">
+    <meta name="theme-color" content="#b0029f" />
+
+    <title>Connect Peeople - App</title>
+  </head>
+  <body>
+
+    <!-- Detalhamento do Card-->
+
+    <!-- Modal -->
+    <div class="modal fade" id="fullProfile" tabindex="-1" aria-labelledby="fullProfile" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="fullProfile_Title">---</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="fullProfile_Body">
+                <h5>Exeperiência:</h5>
+                <span id="fullProfile_Experiencia"></span>
+                <h5>Formação Profissional:</h5>
+                <span id="fullProfile_Formacao"></span>
+                <h5>Habilidades:</h5>
+                <span id="fullProfile_Habilidade"></span>
+
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <header class="container-fluid fixed-top">
+        <img src="imgs/logo1.png" class="logo">
+    </header>
+
+    <main class="container">
+
+        <div class="row">
+            <div class="col-12">
+                <div class="alert alert-warning" role="alert" style="min-height: 90px;">
+                    <img src="imgs/offline.png" width="64" style="float: left; margin-right: 5px;">
+                    Você está acessando a versão offline do app. Conecte a internet para atualizar os conteúdos.
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="row">
+                <div class="col-12" style="text-align: center; margin-top: 20px;" >
+                    <img src="imgs/loading.gif" width="128">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="container-fluid fixed-bottom">
+
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+
+    //Carregar dados dinâmicos (AJAX)
+    var ajax = new XMLHttpRequest();
+
+    ajax.open("GET", "./dados.json", true);
+
+    ajax.send();
+
+    ajax.onreadystatechange = function(){
+
+        var content = document.getElementById("content");
+
+        if(ajax.readyState == 4 && ajax.status == 200){
+
+            var data_json =  JSON.parse(ajax.responseText);
+
+            if(data_json.length == 0){
+
+                content.innerHTML = '<div class="alert alert-warning" role="alert">Nenhum curriculo cadastrado.</div>';
+
+            }else{
+                var html_content = "";
+
+                for(var i = 0; i <data_json.length; i++){
+
+                    html_content += '<div class="row title_cat"><div class="col-12"><h2>'+data_json[i].cargo+'</h2></div></div><div class="row">';
+
+                    if(data_json[i].pessoa.length == 0){
+                        html_content += '<div class="col-12"><div class="alert alert-warning" role="alert">Nenhum curriculo cadastrado para este cargo.</div></div>';
+                    }else{
+                        
+                        for(var j = 0; j < data_json[i].pessoa.length; j++){
+                            html_content += card_pessoa(data_json[i].pessoa[j].nome,data_json[i].pessoa[j].imagem,data_json[i].pessoa[j].posicao,data_json[i].pessoa[j].url_linkedin,data_json[i].pessoa[j].experiencia,data_json[i].pessoa[j].formacao,data_json[i].pessoa[j].habilidades);
+                        }
+
+                    }
+
+                    html_content +="</div>";
+                }        
+                content.innerHTML = html_content;
+            }
+        }
+    }
+
+    var card_pessoa = function(nome, imagem, posicao, url_linkedin, experiencia, formacao, habilidades){
+
+
+        return '<div class="col-md-4">'+       
+                    '<div class="card">'+
+                        '<img src="'+imagem+'" class="img_profile">'+
+                        '<h5 class="card-header">'+nome+'</h5>'+
+                        '<div class="card-body" style="text-align: center;">'+
+                            '<h5 class="card-title">'+posicao+'</h5>'+
+                            '<p class="card-text">Largo conhecimento técnico e liderança.</p>'+
+                            '<a href="#" onClick="javascript:dadosModal(\''+nome+'\', \''+experiencia+'\', \''+formacao+'\', \''+habilidades+'\');" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#fullProfile">Sobre</a>&nbsp;'+                    
+                        '</div>'+
+                    '</div>'+
+                '</div>';
+
+    }
+
+    var dadosModal = function(nome, experiencia, formacao, habilidades){
+
+        console.log(nome);
+
+        document.getElementById('fullProfile_Title').innerHTML = nome;
+        document.getElementById('fullProfile_Experiencia').innerHTML = experiencia;
+        document.getElementById('fullProfile_Formacao').innerHTML = formacao;
+        document.getElementById('fullProfile_Habilidade').innerHTML = habilidades;
+
+    }
+
+    </script>
+
+  </body>
+</html>
