@@ -38,13 +38,8 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body" id="fullProfile_Body">
-                <h5>Exeperiência:</h5>
+                <h5>Letra:</h5>
                 <span id="fullProfile_Experiencia"></span>
-                <h5>Formação Profissional:</h5>
-                <span id="fullProfile_Formacao"></span>
-                <h5>Habilidades:</h5>
-                <span id="fullProfile_Habilidade"></span>
-
             </div>
         </div>
         </div>
@@ -109,12 +104,14 @@
 
                     html_content += '<div class="row title_cat"><div class="col-12"><h2>'+data_json[i].cargo+'</h2></div></div><div class="row">';
 
-                    if(data_json[i].pessoa.length == 0){
+                    if(data_json[i].bandas.length == 0){
                         html_content += '<div class="col-12"><div class="alert alert-warning" role="alert">Nenhum curriculo cadastrado para este cargo.</div></div>';
                     }else{
                         
-                        for(var j = 0; j < data_json[i].pessoa.length; j++){
-                            html_content += card_pessoa(data_json[i].pessoa[j].nome,data_json[i].pessoa[j].imagem,data_json[i].pessoa[j].posicao,data_json[i].pessoa[j].url_linkedin,data_json[i].pessoa[j].experiencia,data_json[i].pessoa[j].formacao,data_json[i].pessoa[j].habilidades);
+                        for(var j = 0; j < data_json[i].bandas.length; j++){
+                            var artista = data_json[i].bandas[j];
+
+                            html_content += card_pessoa(artista.nome,artista.foto,artista.titulo,artista.video,artista.letra);
                         }
 
                     }
@@ -126,9 +123,7 @@
         }
     }
 
-    var card_pessoa = function(nome, imagem, posicao, url_linkedin, experiencia, formacao, habilidades){
-
-
+    var card_pessoa = function(nome, imagem, posicao, url_linkedin, experiencia){
         return '<div class="col-md-4">'+       
                     '<div class="card">'+
                         '<img src="'+imagem+'" class="img_profile">'+
@@ -136,11 +131,10 @@
                         '<div class="card-body" style="text-align: center;">'+
                             '<h5 class="card-title">'+posicao+'</h5>'+
                             '<p class="card-text">Largo conhecimento técnico e liderança.</p>'+
-                            '<a href="#" onClick="javascript:dadosModal(\''+nome+'\', \''+experiencia+'\', \''+formacao+'\', \''+habilidades+'\');" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#fullProfile">Sobre</a>&nbsp;'+                    
+                            '<a href="#" onClick="javascript:dadosModal(\''+nome+'\', \''+experiencia+'\');" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#fullProfile">Sobre</a>&nbsp;'+                    
                         '</div>'+
                     '</div>'+
                 '</div>';
-
     }
 
     var dadosModal = function(nome, experiencia, formacao, habilidades){

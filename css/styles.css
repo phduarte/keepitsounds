@@ -1,17 +1,13 @@
 header{
-    /* background: url('../imgs/bg1.jpg'); */
-    /* background-color: #B200B2; */
+    background-color: #171516;
     background-size: cover;
-    height: 100px;
+    height: 120px;
     -webkit-box-shadow: 0px 4px 12px 3px rgba(0,0,0,0.56); 
     box-shadow: 0px 4px 12px 3px rgba(0,0,0,0.56);  
 }
 
-body { 
-    /* background-color: #000; */
+body {
     background-color: #171516;
-    /* background-image: url('../imgs/bg2.jpg'); */
-    background-size:auto;
 }
 
 .logo{
@@ -23,7 +19,7 @@ body {
 }
 
 main{
-    margin-top: 110px;
+    margin-top: 140px;
     margin-bottom: 50px;
 }
 
@@ -35,13 +31,18 @@ main{
     padding: 8px;
     font-size: 1.1rem;
     color: #07c8da;
-    border-bottom: 2px solid #07c8da;
     border-bottom: 2px solid #b0029f;
     padding-left: 45px;
+    text-shadow: 1px 1px #171516;
 }
+
 .card{
     margin-top: 70px;
     margin-bottom: 15px;
+    background-color: #484245;
+    /*https://html-css-js.com/css/generator/box-shadow/*/
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 .card-header{
@@ -49,10 +50,21 @@ main{
     padding-top: 40px;
     font-size: 1.5rem;
     color: #b0029f;
+    color: #07c8da;
+    background-color: #3d393b;
+    text-shadow: 1px 1px #171516;
+
 }
+.card-title{
+    color: #b0029f;
+    color: #E22699;
+    text-shadow: 1px 1px #171516;
+}
+
 #fullProfile_Title{
     color: #b0029f;
 }
+
 .img_profile{
     border-radius: 100px;
     width: 100px;
@@ -62,27 +74,8 @@ main{
     top: -65px;
 }
 
-footer{
-    /* background: url('../imgs/bg1.jpg'); */
+footer {
     background-image: url('../imgs/bg-footer.png');
-    /* background-color: #000000; */
-    /* background-size: cover; */
-    background-position: 5px;
     height: 60px;
     padding: 10px;
-}
-
-
-.box-center
-{
-    /* width: 100%; */
-    /* background-color: #FF0000; */
-}
-
-.btn-group
-{
-    /* position: relative;
-    margin: 0 auto;
-    clear: both; */
-    /* display: block; */
 }

@@ -1,53 +1,45 @@
 [
     {
-        "cargo":"Engenheiro de Software",
-        "pessoa":[
+        "estilo":"Rock",
+        "musicas":[
             {
-                "nome":"Paulo Henrique",
-                "imagem":"imgs/people_002.jpg",
-                "posicao":"Engenheiro Lider - iFood",
-                "url_linkedin":"http://www.globo.com",
-                "experiencia":"Experiencia - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
-                "formacao":"Formação - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
-                "habilidades":"Habilidades - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis."
+                "artista":"Joan Jett",
+                "foto":"imgs/joan-jett.jpg",
+                "titulo":"I Hate myself for loving you",
+                "video":"https://www.youtube.com/watch?v=bpNw7jYkbVc",
+                "letra":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis."
             },
             {
-                "nome":"Paula Fernandes",
-                "imagem":"imgs/people_001.jpg",
-                "posicao":"Engenheira Seinor - Nubank",
-                "url_linkedin":"http://www.google.com",
-                "experiencia":"Experiencia - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
-                "formacao":"Formação - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
-                "habilidades":"Habilidades - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis."
+                "artista":"Alice Cooper",
+                "foto":"imgs/alicecooper.jpg",
+                "titulo":"Poison",
+                "video":"https://www.youtube.com/watch?v=Qq4j1LtCdww",
+                "letra":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis."
             },
             {
-                "nome":"Marília Medonça",
-                "imagem":"imgs/people_003.jpg",
-                "posicao":"Engenheira Pleno - UOL",
-                "url_linkedin":"http://www.uol.com",
-                "experiencia":"Experiencia - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
-                "formacao":"Formação - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
-                "habilidades":"Habilidades - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis."
-            }                      
+                "artista":"Megadeth",
+                "foto":"imgs/megadeth.jpg",
+                "titulo":"Symphony of Destruction",
+                "video":"https://www.youtube.com/watch?v=Sy4dhcELoqc",
+                "letra":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis."
+            }
         ]
     },
     {
-        "cargo":"Arquiteto de Software",
-        "pessoa":[
+        "estilo":"Pop",
+        "musicas":[
             {
-                "nome":"Marcos Arrais",
-                "imagem":"imgs/people_004.jpg",
-                "posicao":"Engenheiro Lider - iFood",
-                "url_linkedin":"http://www.globo.com",
-                "experiencia":"Experiencia - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
-                "formacao":"Formação - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis.",
-                "habilidades":"Habilidades - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis."
-            }                    
+                "artista":"Engenheiros do Hawaii",
+                "foto":"imgs/engenheiros-do-hawaii.jpg",
+                "titulo":"Infinita Highway",
+                "video":"https://www.youtube.com/watch?v=OUs-0m4pTAI",
+                "letra":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam purus neque, vel laoreet dui tincidunt eu. Phasellus porta nisl quis nunc fringilla, nec aliquam nisi accumsan. Pellentesque tempus dignissim massa ac mattis."
+            }
         ]
     },
     {
-        "cargo":"Devops",
-        "pessoa":[
+        "estilo":"MPB",
+        "musicas":[
                  
         ]
     }     
